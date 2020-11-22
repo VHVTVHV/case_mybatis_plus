@@ -1,0 +1,12 @@
+server:
+  port: 8080
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/mapping/*.xml
+  type-aliases-package: com.vvc.case_mybatis_plus.entiry.model
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+#mybatis:
+#  mapper-locations: classpath:/mapper/mapping/*.xml
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

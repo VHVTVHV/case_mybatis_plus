@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vvc.case_mybatis_plus.mapper.UserInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.vvc.case_mybatis_plus.entity.model.User">
+        <result column="id" jdbcType="INTEGER" property="id" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+        <result column="age" jdbcType="VARCHAR" property="age" />
+        <result column="sex" jdbcType="VARCHAR" property="sex" />
+    </resultMap>
+
+    <select id="queryById" resultType="com.vvc.case_mybatis_plus.entity.model.User">
+        select * from t_mybatis_plus_user where id = #{id}
+    </select>
+
+</mapper>
